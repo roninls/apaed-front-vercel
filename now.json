@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "name": "apaed2022",
+    "builds": [
+        {
+            "src": "/src/index.tsx", "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/*", "dest": "/src/index.tsx"
+        }
+    ],
+    "env": {
+        "NODE_ENV": "development",
+        "HOST_DB": "@task-host-db",
+        "PORT_DB": "@task-port-db",
+        "DATABASE_DB": "@task-database-db",
+        "USER_DB": "@task-user-db",
+        "PASSWORD_DB": "@task-password-db",
+        "SECRET_KEY": "@task-secret-key"
+    }
+}

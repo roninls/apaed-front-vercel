@@ -1,0 +1,5 @@
+now secrets add task-host-db 'jelani.db.elephantsql.com' && now secrets add task-port-db '5432' && now secrets add task-database-db 'vnpzetna' && now secrets add task-user-db 'vnpzetna' && now secrets add task-password-db 'd1AGK2V1JSl6R3uAkflyRFtlPpEHcowY' && now secrets add task-secret-key 'ff94de243e06fc23b19e5b924a53c798' 
+
+
+
+CI= npm run build

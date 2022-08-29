@@ -1,0 +1,70 @@
+<div className="d-flex h-100 align-items-center justify-content-center">
+        <Card className="w-50 shadow-lg">
+          <CardHeader className="bg-dark text-white">Tipo produto</CardHeader>
+          <CardBody>
+            <AvForm id="add-category-form" onValidSubmit={this.handleValidSubmit}>
+              <Row className="d-flex align-items-center">
+                <Col md={12}>
+                  <FormGroup className="mx-4">
+                    <Label for="name">Nome</Label>
+                    <AvField
+                      readOnly
+                      className="form-control"
+                      name="name"
+                      id="name"
+                      required
+                      value={toViewProduct.name}
+                      errorMessage="Esse campo é obrigatório!"
+                    />
+                  </FormGroup>
+                </Col>
+              </Row>
+              <Row className="d-flex align-items-center">
+                <Col md={12}>
+                  <FormGroup className='mx-4'>
+                    <Label for="brand">Marca</Label>
+                    <AvField
+                      readOnly
+                      className="form-control"
+                      name="brand"
+                      id="brand"
+                      value={toViewProduct.brand}
+                      required
+                      errorMessage="Esse campo é obrigatório!"
+                    />
+                  </FormGroup>
+                </Col>
+              </Row>
+              <Row className="d-flex align-items-center">
+                <Col md={12}>
+                  <FormGroup className='mx-4'>
+                    <Label for="valor_product">Valor (R$)</Label>
+                    <AvField
+                      className="form-control"
+                      name="valor_product"
+                      id="valor_product"
+                      value={toViewProduct.valor_product}
+                      required
+                      errorMessage="Esse campo é obrigatório!"
+                    />
+                  </FormGroup>
+                </Col>
+              </Row>
+              <br />
+              <Button type="submit" className="mb-4 float-right float-down" color="success">
+                {toViewProduct.id ? 'Atualizar valor do produto' : 'Atualizar valor do produto'}
+              </Button>
+              <Button
+                tag={Link}
+                to={`${user.role.name === AUTHORITIES.BAZAR ? '/bazar/bazar' : '/bazar/bazar'}`}
+                type="button"
+                className="mb-8 float-left"
+                color="danger"
+              >
+                Cancelar
+              </Button>
+            </AvForm>
+            <br />
+          </CardBody>
+        </Card>
+      </div>

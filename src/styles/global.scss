@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import "src/styles/table";
+
+$margin-bottom: 20vh;
+$xs: 575px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+*, button, input {
+    border: 0;
+    background: none;
+    font-family: "Comfortaa", cursive;
+    color: var(--black);
+    transition: color .2s ease-out;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0;
+}
+
+.col {
+    padding: 0;
+}
+
+div[class*='col-'] {
+    padding: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+:root {
+    --white: #fff;
+    --pastel: #fdf0ee;
+    --pastel-opac: rgba(253, 240, 238, 0.4);
+    --pastel2: rgba(254, 250, 249, 1);
+    --pastel2-opac: rgba(254, 250, 249, 0.4);
+    --orange: #e76034;
+    --orange-opac: rgba(231, 96, 52, 0.6);
+    --orange-opac2: rgba(231, 96, 52, 0.2);
+    --gray: #737373;
+    --gray-opac: rgba(155, 155, 155, 0.6);
+    --pink: #c85c74;
+    --black: #000;
+    --pink-light: #fff5f1;
+}
